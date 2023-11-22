@@ -1,0 +1,159 @@
+package com.nopcommerce.user;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import com.nopcommerce.common.Common_01_RegisterAccountAndGetCookie;
+
+import commons.BaseTest;
+import commons.PageGeneratorManagerUser;
+import pagesObject.user.HomePageObject;
+import pagesObject.user.LoginPageObject;
+import pagesObject.user.SearchPageObject;
+
+public class User_04_Search extends BaseTest {
+	private WebDriver driver;
+	private SearchPageObject searchPage;
+	private LoginPageObject loginPage;
+	private HomePageObject homePage;
+
+	private String pageName;
+	private String appleProduct;
+	private String searchCategory;
+
+	@Parameters({ "browser", "url" })
+	@BeforeClass
+	public void BeforeClass(String browserName, String pageURl) {
+		 pageName = "Search";
+		 appleProduct = "Apple MacBook Pro";
+		 searchCategory = "Computers";
+		 
+		driver = getBrowserName(browserName, pageURl);
+
+		homePage = PageGeneratorManagerUser.getHomePageObject(driver);
+		
+		loginPage = homePage.clickOnLoginLink();
+		loginPage.setCookie(driver, Common_01_RegisterAccountAndGetCookie.loggedCookies);
+		loginPage.refreshBrowser(driver);
+
+		homePage.clickOnFooterLink(driver, pageName);
+		searchPage = PageGeneratorManagerUser.getSearchPageObject(driver);
+	}
+
+	@Test
+	public void Search_01_InputEmptyData() {
+		searchPage.clickOnSearchButton();
+
+		Assert.assertEquals(searchPage.getWarningErrorMessage(), "Search term minimum length is 3 characters");
+	}
+
+	@Test
+	public void Search_02_InputNotExistedData() {
+		String searchKeyword = "Macbook Pro 2050";
+		
+		homePage.clickOnFooterLink(driver, pageName);
+		
+		searchPage = PageGeneratorManagerUser.getSearchPageObject(driver);
+		searchPage.inputToSearchTextbox(searchKeyword);
+		searchPage.clickOnSearchButton();
+
+		Assert.assertEquals(searchPage.getSearchErrorMessage(), "No products were found that matched your criteria.");
+	}
+
+	@Test
+	public void Search_03_InputRelativeKeyword() {
+		String searchKeyword = "Lenovo";
+		
+		homePage.clickOnFooterLink(driver, pageName);
+		
+		searchPage = PageGeneratorManagerUser.getSearchPageObject(driver);
+		searchPage.inputToSearchTextbox(searchKeyword);
+		searchPage.clickOnSearchButton();
+
+		Assert.assertEquals(searchPage.getProductQuantityValue(), 2);
+		Assert.assertTrue(searchPage.isContainedExpectedItem(searchKeyword));
+	}
+
+	@Test
+	public void Search_04_InputAbsoluteKeyword() {
+		String searchKeyword = "Lenovo IdeaCentre 600 All-in-One PC";
+		
+		homePage.clickOnFooterLink(driver, pageName);
+		
+		searchPage = PageGeneratorManagerUser.getSearchPageObject(driver);
+		searchPage.inputToSearchTextbox(searchKeyword);
+		searchPage.clickOnSearchButton();
+
+		Assert.assertEquals(searchPage.getProductQuantityValue(), 1);
+		Assert.assertTrue(searchPage.isContainedExpectedItem(searchKeyword));
+	}
+
+	@Test
+	public void Search_05_AdvancedSearchWithParentCategories() {
+		homePage.clickOnFooterLink(driver, pageName);
+		
+		searchPage = PageGeneratorManagerUser.getSearchPageObject(driver);
+		searchPage.inputToSearchTextbox(appleProduct);
+		searchPage.clickOnAdvancedSearchCheckbox();
+		searchPage.selectSearchCategoryDropdownlist(searchCategory);
+		searchPage.clickOnSearchButton();
+
+		Assert.assertEquals(searchPage.getSearchErrorMessage(), "No products were found that matched your criteria.");
+	}
+
+	@Test
+	public void Search_06_AdvancedSearchWithSubCategories() {
+		homePage.clickOnFooterLink(driver, pageName);
+		
+		searchPage = PageGeneratorManagerUser.getSearchPageObject(driver);
+
+		searchPage.inputToSearchTextbox(appleProduct);
+		searchPage.clickOnAdvancedSearchCheckbox();
+		searchPage.selectSearchCategoryDropdownlist(searchCategory);
+		searchPage.clickOnSearchSubCategoryCheckbox();
+		searchPage.clickOnSearchButton();
+
+		Assert.assertEquals(searchPage.getProductQuantityValue(), 1);
+		Assert.assertTrue(searchPage.isContainedExpectedItem("Apple MacBook Pro 13-inch"));
+	}
+
+	@Test
+	public void Search_07_AdvancedSearchWithIncorrectManufacturer() {
+		homePage.clickOnFooterLink(driver, pageName);
+		
+		searchPage = PageGeneratorManagerUser.getSearchPageObject(driver);
+		searchPage.inputToSearchTextbox(appleProduct);
+		searchPage.clickOnAdvancedSearchCheckbox();
+		searchPage.selectSearchCategoryDropdownlist(searchCategory);
+		searchPage.clickOnSearchSubCategoryCheckbox();
+		searchPage.selectOnManufacturerDropdownlist("HP");
+		searchPage.clickOnSearchButton();
+
+		Assert.assertEquals(searchPage.getSearchErrorMessage(), "No products were found that matched your criteria.");
+	}
+
+	@Test
+	public void Search_08_AdvancedSearchWithCorrectManufacturer() {
+		homePage.clickOnFooterLink(driver, pageName);
+		
+		searchPage = PageGeneratorManagerUser.getSearchPageObject(driver);
+		searchPage.inputToSearchTextbox(appleProduct);
+		searchPage.clickOnAdvancedSearchCheckbox();
+		searchPage.selectSearchCategoryDropdownlist(searchCategory);
+		searchPage.clickOnSearchSubCategoryCheckbox();
+		searchPage.selectOnManufacturerDropdownlist("Apple");
+		searchPage.clickOnSearchButton();
+
+		Assert.assertEquals(searchPage.getProductQuantityValue(), 1);
+		Assert.assertTrue(searchPage.isContainedExpectedItem("Apple MacBook Pro 13-inch"));
+	}
+
+	@AfterClass(alwaysRun = true)
+	public void AfterClass() {
+		closeBrowserDriver();
+	}
+}

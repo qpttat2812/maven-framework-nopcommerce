@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="7" total="52" passed="45" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-22T05:59:14Z" name="NopCommerce" finished-at="2023-11-22T06:06:33Z" duration-ms="439815">
+    <groups>
+    </groups>
+    <test started-at="2023-11-22T05:59:14Z" name="RUN ON FIREFOX - USER" finished-at="2023-11-22T06:06:13Z" duration-ms="419619">
+      <class name="com.nopcommerce.user.User_05_SortAndPaging">
+        <test-method is-config="true" signature="BeforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.user.User_05_SortAndPaging@640dc4c6]" started-at="2023-11-22T06:00:51Z" name="BeforeClass" finished-at="2023-11-22T06:01:05Z" duration-ms="13661" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://demo.nopcommerce.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method signature="SortAndPaging_01_SortWithNameAscending()[pri:0, instance:com.nopcommerce.user.User_05_SortAndPaging@640dc4c6]" started-at="2023-11-22T06:01:05Z" name="SortAndPaging_01_SortWithNameAscending" finished-at="2023-11-22T06:01:06Z" duration-ms="979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SortAndPaging_01_SortWithNameAscending -->
+        <test-method signature="SortAndPaging_02_SortWithNameDescending()[pri:0, instance:com.nopcommerce.user.User_05_SortAndPaging@640dc4c6]" started-at="2023-11-22T06:01:06Z" name="SortAndPaging_02_SortWithNameDescending" finished-at="2023-11-22T06:01:07Z" duration-ms="905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SortAndPaging_02_SortWithNameDescending -->
+        <test-method signature="SortAndPaging_03_SortWithPriceAscending()[pri:0, instance:com.nopcommerce.user.User_05_SortAndPaging@640dc4c6]" started-at="2023-11-22T06:01:07Z" name="SortAndPaging_03_SortWithPriceAscending" finished-at="2023-11-22T06:01:08Z" duration-ms="900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SortAndPaging_03_SortWithPriceAscending -->
+        <test-method signature="SortAndPaging_04_SortWithPriceDescending()[pri:0, instance:com.nopcommerce.user.User_05_SortAndPaging@640dc4c6]" started-at="2023-11-22T06:01:08Z" name="SortAndPaging_04_SortWithPriceDescending" finished-at="2023-11-22T06:01:08Z" duration-ms="913" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SortAndPaging_04_SortWithPriceDescending -->
+        <test-method signature="SortAndPaging_05_DisplayThreeProductsInPage()[pri:0, instance:com.nopcommerce.user.User_05_SortAndPaging@640dc4c6]" started-at="2023-11-22T06:01:08Z" name="SortAndPaging_05_DisplayThreeProductsInPage" finished-at="2023-11-22T06:01:10Z" duration-ms="1756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SortAndPaging_05_DisplayThreeProductsInPage -->
+        <test-method signature="SortAndPaging_06_DisplaySixProductsInPage()[pri:0, instance:com.nopcommerce.user.User_05_SortAndPaging@640dc4c6]" started-at="2023-11-22T06:01:10Z" name="SortAndPaging_06_DisplaySixProductsInPage" finished-at="2023-11-22T06:01:31Z" duration-ms="20881" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SortAndPaging_06_DisplaySixProductsInPage -->
+        <test-method signature="SortAndPaging_07_DisplayNineProductsInPage()[pri:0, instance:com.nopcommerce.user.User_05_SortAndPaging@640dc4c6]" started-at="2023-11-22T06:01:31Z" name="SortAndPaging_07_DisplayNineProductsInPage" finished-at="2023-11-22T06:01:52Z" duration-ms="20948" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SortAndPaging_07_DisplayNineProductsInPage -->
+        <test-method is-config="true" signature="AfterClass()[pri:0, instance:com.nopcommerce.user.User_05_SortAndPaging@640dc4c6]" started-at="2023-11-22T06:01:52Z" name="AfterClass" finished-at="2023-11-22T06:01:53Z" duration-ms="1276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterClass -->
+      </class> <!-- com.nopcommerce.user.User_05_SortAndPaging -->
+      <class name="com.nopcommerce.user.User_07_Orders">
+        <test-method is-config="true" signature="BeforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.user.User_07_Orders@7bb35cc6]" started-at="2023-11-22T06:03:03Z" name="BeforeClass" finished-at="2023-11-22T06:03:16Z" duration-ms="13445" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://demo.nopcommerce.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method signature="Orders_01_AddProductToCart()[pri:0, instance:com.nopcommerce.user.User_07_Orders@7bb35cc6]" started-at="2023-11-22T06:03:16Z" name="Orders_01_AddProductToCart" finished-at="2023-11-22T06:03:18Z" duration-ms="2204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Orders_01_AddProductToCart -->
+        <test-method signature="Orders_02_EditProductInShoppingCart()[pri:0, instance:com.nopcommerce.user.User_07_Orders@7bb35cc6]" started-at="2023-11-22T06:03:18Z" name="Orders_02_EditProductInShoppingCart" finished-at="2023-11-22T06:03:30Z" duration-ms="11582" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Orders_02_EditProductInShoppingCart -->
+        <test-method signature="Orders_03_RemoveFromCart()[pri:0, instance:com.nopcommerce.user.User_07_Orders@7bb35cc6]" started-at="2023-11-22T06:03:30Z" name="Orders_03_RemoveFromCart" finished-at="2023-11-22T06:03:40Z" duration-ms="10542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Orders_03_RemoveFromCart -->
+        <test-method signature="Orders_04_UpdateShoppingCart()[pri:0, instance:com.nopcommerce.user.User_07_Orders@7bb35cc6]" started-at="2023-11-22T06:03:40Z" name="Orders_04_UpdateShoppingCart" finished-at="2023-11-22T06:03:59Z" duration-ms="18403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Orders_04_UpdateShoppingCart -->
+        <test-method signature="Orders_05_Checkout_QueuePaymentMethod()[pri:0, instance:com.nopcommerce.user.User_07_Orders@7bb35cc6]" started-at="2023-11-22T06:03:59Z" name="Orders_05_Checkout_QueuePaymentMethod" finished-at="2023-11-22T06:04:25Z" duration-ms="25998" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Orders_05_Checkout_QueuePaymentMethod -->
+        <test-method signature="Orders_06_Checkout_CardPaymentMethod()[pri:0, instance:com.nopcommerce.user.User_07_Orders@7bb35cc6]" started-at="2023-11-22T06:04:25Z" name="Orders_06_Checkout_CardPaymentMethod" finished-at="2023-11-22T06:05:15Z" duration-ms="49677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Orders_06_Checkout_CardPaymentMethod -->
+        <test-method signature="Orders_07_ReOrder()[pri:0, instance:com.nopcommerce.user.User_07_Orders@7bb35cc6]" started-at="2023-11-22T06:05:15Z" name="Orders_07_ReOrder" finished-at="2023-11-22T06:06:12Z" duration-ms="57786" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Orders_07_ReOrder -->
+        <test-method is-config="true" signature="AfterClass()[pri:0, instance:com.nopcommerce.user.User_07_Orders@7bb35cc6]" started-at="2023-11-22T06:06:12Z" name="AfterClass" finished-at="2023-11-22T06:06:13Z" duration-ms="860" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterClass -->
+      </class> <!-- com.nopcommerce.user.User_07_Orders -->
+      <class name="com.nopcommerce.user.User_04_Search">
+        <test-method is-config="true" signature="BeforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.user.User_04_Search@2c6ee758]" started-at="2023-11-22T06:00:25Z" name="BeforeClass" finished-at="2023-11-22T06:00:38Z" duration-ms="13155" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://demo.nopcommerce.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method signature="Search_01_InputEmptyData()[pri:0, instance:com.nopcommerce.user.User_04_Search@2c6ee758]" started-at="2023-11-22T06:00:38Z" name="Search_01_InputEmptyData" finished-at="2023-11-22T06:00:38Z" duration-ms="556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search_01_InputEmptyData -->
+        <test-method signature="Search_02_InputNotExistedData()[pri:0, instance:com.nopcommerce.user.User_04_Search@2c6ee758]" started-at="2023-11-22T06:00:38Z" name="Search_02_InputNotExistedData" finished-at="2023-11-22T06:00:40Z" duration-ms="1129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search_02_InputNotExistedData -->
+        <test-method signature="Search_03_InputRelativeKeyword()[pri:0, instance:com.nopcommerce.user.User_04_Search@2c6ee758]" started-at="2023-11-22T06:00:40Z" name="Search_03_InputRelativeKeyword" finished-at="2023-11-22T06:00:41Z" duration-ms="1297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search_03_InputRelativeKeyword -->
+        <test-method signature="Search_04_InputAbsoluteKeyword()[pri:0, instance:com.nopcommerce.user.User_04_Search@2c6ee758]" started-at="2023-11-22T06:00:41Z" name="Search_04_InputAbsoluteKeyword" finished-at="2023-11-22T06:00:42Z" duration-ms="1143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search_04_InputAbsoluteKeyword -->
+        <test-method signature="Search_05_AdvancedSearchWithParentCategories()[pri:0, instance:com.nopcommerce.user.User_04_Search@2c6ee758]" started-at="2023-11-22T06:00:42Z" name="Search_05_AdvancedSearchWithParentCategories" finished-at="2023-11-22T06:00:44Z" duration-ms="1632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search_05_AdvancedSearchWithParentCategories -->
+        <test-method signature="Search_06_AdvancedSearchWithSubCategories()[pri:0, instance:com.nopcommerce.user.User_04_Search@2c6ee758]" started-at="2023-11-22T06:00:44Z" name="Search_06_AdvancedSearchWithSubCategories" finished-at="2023-11-22T06:00:46Z" duration-ms="1935" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search_06_AdvancedSearchWithSubCategories -->
+        <test-method signature="Search_07_AdvancedSearchWithIncorrectManufacturer()[pri:0, instance:com.nopcommerce.user.User_04_Search@2c6ee758]" started-at="2023-11-22T06:00:46Z" name="Search_07_AdvancedSearchWithIncorrectManufacturer" finished-at="2023-11-22T06:00:48Z" duration-ms="2275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search_07_AdvancedSearchWithIncorrectManufacturer -->
+        <test-method signature="Search_08_AdvancedSearchWithCorrectManufacturer()[pri:0, instance:com.nopcommerce.user.User_04_Search@2c6ee758]" started-at="2023-11-22T06:00:48Z" name="Search_08_AdvancedSearchWithCorrectManufacturer" finished-at="2023-11-22T06:00:50Z" duration-ms="2170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search_08_AdvancedSearchWithCorrectManufacturer -->
+        <test-method is-config="true" signature="AfterClass()[pri:0, instance:com.nopcommerce.user.User_04_Search@2c6ee758]" started-at="2023-11-22T06:00:50Z" name="AfterClass" finished-at="2023-11-22T06:00:51Z" duration-ms="1036" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterClass -->
+      </class> <!-- com.nopcommerce.user.User_04_Search -->
+      <class name="com.nopcommerce.user.User_03_MyAccountInfo">
+        <test-method is-config="true" signature="BeforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.user.User_03_MyAccountInfo@66bacdbc]" started-at="2023-11-22T05:59:55Z" name="BeforeClass" finished-at="2023-11-22T06:00:04Z" duration-ms="9204" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://demo.nopcommerce.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method signature="MyAccount_01_UpdateCustomerInfo()[pri:0, instance:com.nopcommerce.user.User_03_MyAccountInfo@66bacdbc]" started-at="2023-11-22T06:00:04Z" name="MyAccount_01_UpdateCustomerInfo" finished-at="2023-11-22T06:00:08Z" duration-ms="3925" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyAccount_01_UpdateCustomerInfo -->
+        <test-method signature="MyAccount_02_AddAddressInfo()[pri:0, instance:com.nopcommerce.user.User_03_MyAccountInfo@66bacdbc]" started-at="2023-11-22T06:00:08Z" name="MyAccount_02_AddAddressInfo" finished-at="2023-11-22T06:00:14Z" duration-ms="5751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyAccount_02_AddAddressInfo -->
+        <test-method signature="MyAccount_03_ChangePassword()[pri:0, instance:com.nopcommerce.user.User_03_MyAccountInfo@66bacdbc]" started-at="2023-11-22T06:00:14Z" name="MyAccount_03_ChangePassword" finished-at="2023-11-22T06:00:19Z" duration-ms="4852" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyAccount_03_ChangePassword -->
+        <test-method signature="MyAccount_04_MyProductReview()[pri:0, instance:com.nopcommerce.user.User_03_MyAccountInfo@66bacdbc]" started-at="2023-11-22T06:00:19Z" name="MyAccount_04_MyProductReview" finished-at="2023-11-22T06:00:23Z" duration-ms="4826" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyAccount_04_MyProductReview -->
+        <test-method is-config="true" signature="AfterClass()[pri:0, instance:com.nopcommerce.user.User_03_MyAccountInfo@66bacdbc]" started-at="2023-11-22T06:00:23Z" name="AfterClass" finished-at="2023-11-22T06:00:25Z" duration-ms="1334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterClass -->
+      </class> <!-- com.nopcommerce.user.User_03_MyAccountInfo -->
+      <class name="com.nopcommerce.common.Common_01_RegisterAccountAndGetCookie">
+        <test-method is-config="true" signature="RegisterAndGetLoginCookie(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.common.Common_01_RegisterAccountAndGetCookie@191a709b]" started-at="2023-11-22T05:59:14Z" name="RegisterAndGetLoginCookie" finished-at="2023-11-22T05:59:28Z" duration-ms="14437" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://demo.nopcommerce.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterAndGetLoginCookie -->
+      </class> <!-- com.nopcommerce.common.Common_01_RegisterAccountAndGetCookie -->
+      <class name="com.nopcommerce.user.User_02_LoginAccount">
+        <test-method is-config="true" signature="BeforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.user.User_02_LoginAccount@453d496b]" started-at="2023-11-22T05:59:41Z" name="BeforeClass" finished-at="2023-11-22T05:59:47Z" duration-ms="5778" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://demo.nopcommerce.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method signature="Login_01_InputEmptyData()[pri:0, instance:com.nopcommerce.user.User_02_LoginAccount@453d496b]" started-at="2023-11-22T05:59:47Z" name="Login_01_InputEmptyData" finished-at="2023-11-22T05:59:47Z" duration-ms="354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_01_InputEmptyData -->
+        <test-method signature="Login_02_InvalidEmail()[pri:0, instance:com.nopcommerce.user.User_02_LoginAccount@453d496b]" started-at="2023-11-22T05:59:47Z" name="Login_02_InvalidEmail" finished-at="2023-11-22T05:59:49Z" duration-ms="1437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_02_InvalidEmail -->
+        <test-method signature="Login_03_InputUnregisteredEmail()[pri:0, instance:com.nopcommerce.user.User_02_LoginAccount@453d496b]" started-at="2023-11-22T05:59:49Z" name="Login_03_InputUnregisteredEmail" finished-at="2023-11-22T05:59:50Z" duration-ms="1208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_03_InputUnregisteredEmail -->
+        <test-method signature="Login_04_InputRegisteredEmailAndNoPassword()[pri:0, instance:com.nopcommerce.user.User_02_LoginAccount@453d496b]" started-at="2023-11-22T05:59:50Z" name="Login_04_InputRegisteredEmailAndNoPassword" finished-at="2023-11-22T05:59:51Z" duration-ms="1106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_04_InputRegisteredEmailAndNoPassword -->
+        <test-method signature="Login_05_InputRegisteredEmailAndWrongPassword()[pri:0, instance:com.nopcommerce.user.User_02_LoginAccount@453d496b]" started-at="2023-11-22T05:59:51Z" name="Login_05_InputRegisteredEmailAndWrongPassword" finished-at="2023-11-22T05:59:52Z" duration-ms="1172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_05_InputRegisteredEmailAndWrongPassword -->
+        <test-method signature="Login_06_InputRegisteredEmailAndPassword()[pri:0, instance:com.nopcommerce.user.User_02_LoginAccount@453d496b]" started-at="2023-11-22T05:59:52Z" name="Login_06_InputRegisteredEmailAndPassword" finished-at="2023-11-22T05:59:54Z" duration-ms="1492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_06_InputRegisteredEmailAndPassword -->
+        <test-method is-config="true" signature="AfterClass()[pri:0, instance:com.nopcommerce.user.User_02_LoginAccount@453d496b]" started-at="2023-11-22T05:59:54Z" name="AfterClass" finished-at="2023-11-22T05:59:55Z" duration-ms="1008" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterClass -->
+      </class> <!-- com.nopcommerce.user.User_02_LoginAccount -->
+      <class name="com.nopcommerce.user.User_06_WishlistAndCompare">
+        <test-method is-config="true" signature="BeforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.user.User_06_WishlistAndCompare@4b54af3d]" started-at="2023-11-22T06:01:53Z" name="BeforeClass" finished-at="2023-11-22T06:02:07Z" duration-ms="13471" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://demo.nopcommerce.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method signature="WishlistAndCompare_01_AddToWishlist()[pri:0, instance:com.nopcommerce.user.User_06_WishlistAndCompare@4b54af3d]" started-at="2023-11-22T06:02:07Z" name="WishlistAndCompare_01_AddToWishlist" finished-at="2023-11-22T06:02:13Z" duration-ms="5845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WishlistAndCompare_01_AddToWishlist -->
+        <test-method signature="WishlistAndCompare_02_AddProductToCartFromWishlist()[pri:0, instance:com.nopcommerce.user.User_06_WishlistAndCompare@4b54af3d]" started-at="2023-11-22T06:02:13Z" name="WishlistAndCompare_02_AddProductToCartFromWishlist" finished-at="2023-11-22T06:02:29Z" duration-ms="16183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WishlistAndCompare_02_AddProductToCartFromWishlist -->
+        <test-method signature="WishlistAndCompare_03_RemoveProductFromWishlist()[pri:0, instance:com.nopcommerce.user.User_06_WishlistAndCompare@4b54af3d]" started-at="2023-11-22T06:02:29Z" name="WishlistAndCompare_03_RemoveProductFromWishlist" finished-at="2023-11-22T06:02:34Z" duration-ms="4918" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WishlistAndCompare_03_RemoveProductFromWishlist -->
+        <test-method signature="WishlistAndCompare_04_AddProductToCompare()[pri:0, instance:com.nopcommerce.user.User_06_WishlistAndCompare@4b54af3d]" started-at="2023-11-22T06:02:34Z" name="WishlistAndCompare_04_AddProductToCompare" finished-at="2023-11-22T06:02:55Z" duration-ms="21574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WishlistAndCompare_04_AddProductToCompare -->
+        <test-method signature="WishlistAndCompare_05_RecentlyViewedProduct()[pri:0, instance:com.nopcommerce.user.User_06_WishlistAndCompare@4b54af3d]" started-at="2023-11-22T06:02:55Z" name="WishlistAndCompare_05_RecentlyViewedProduct" finished-at="2023-11-22T06:03:02Z" duration-ms="6332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WishlistAndCompare_05_RecentlyViewedProduct -->
+        <test-method is-config="true" signature="AfterClass()[pri:0, instance:com.nopcommerce.user.User_06_WishlistAndCompare@4b54af3d]" started-at="2023-11-22T06:03:02Z" name="AfterClass" finished-at="2023-11-22T06:03:03Z" duration-ms="1028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterClass -->
+      </class> <!-- com.nopcommerce.user.User_06_WishlistAndCompare -->
+      <class name="com.nopcommerce.user.User_01_RegisterNewAccount">
+        <test-method is-config="true" signature="BeforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.user.User_01_RegisterNewAccount@77c7ed8e]" started-at="2023-11-22T05:59:28Z" name="BeforeClass" finished-at="2023-11-22T05:59:34Z" duration-ms="5554" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://demo.nopcommerce.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method signature="Register_01_InputEmptyData()[pri:0, instance:com.nopcommerce.user.User_01_RegisterNewAccount@77c7ed8e]" started-at="2023-11-22T05:59:34Z" name="Register_01_InputEmptyData" finished-at="2023-11-22T05:59:34Z" duration-ms="531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Register_01_InputEmptyData -->
+        <test-method signature="Register_02_InputInvalidEmail()[pri:0, instance:com.nopcommerce.user.User_01_RegisterNewAccount@77c7ed8e]" started-at="2023-11-22T05:59:34Z" name="Register_02_InputInvalidEmail" finished-at="2023-11-22T05:59:36Z" duration-ms="1507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Register_02_InputInvalidEmail -->
+        <test-method signature="Register_03_InputExistedEmail()[pri:0, instance:com.nopcommerce.user.User_01_RegisterNewAccount@77c7ed8e]" started-at="2023-11-22T05:59:36Z" name="Register_03_InputExistedEmail" finished-at="2023-11-22T05:59:37Z" duration-ms="1483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Register_03_InputExistedEmail -->
+        <test-method signature="Register_04_InputPasswordLessThanSixCharacters()[pri:0, instance:com.nopcommerce.user.User_01_RegisterNewAccount@77c7ed8e]" started-at="2023-11-22T05:59:37Z" name="Register_04_InputPasswordLessThanSixCharacters" finished-at="2023-11-22T05:59:38Z" duration-ms="1188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Register_04_InputPasswordLessThanSixCharacters -->
+        <test-method signature="Register_05_InputConfirmPasswordNotMatchPassword()[pri:0, instance:com.nopcommerce.user.User_01_RegisterNewAccount@77c7ed8e]" started-at="2023-11-22T05:59:38Z" name="Register_05_InputConfirmPasswordNotMatchPassword" finished-at="2023-11-22T05:59:40Z" duration-ms="1688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Register_05_InputConfirmPasswordNotMatchPassword -->
+        <test-method is-config="true" signature="AfterClass()[pri:0, instance:com.nopcommerce.user.User_01_RegisterNewAccount@77c7ed8e]" started-at="2023-11-22T05:59:40Z" name="AfterClass" finished-at="2023-11-22T05:59:41Z" duration-ms="1172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterClass -->
+      </class> <!-- com.nopcommerce.user.User_01_RegisterNewAccount -->
+    </test> <!-- RUN ON FIREFOX - USER -->
+    <test started-at="2023-11-22T06:06:13Z" name="RUN ON FIREFOX - ADMIN" finished-at="2023-11-22T06:06:33Z" duration-ms="20163">
+      <class name="com.nopcommerce.admin.Admin_01_SearchWithProductName">
+        <test-method is-config="true" signature="deleteFileInReport()[pri:0, instance:com.nopcommerce.admin.Admin_01_SearchWithProductName@59496961]" started-at="2023-11-22T05:59:14Z" name="deleteFileInReport" finished-at="2023-11-22T05:59:14Z" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteFileInReport -->
+        <test-method is-config="true" signature="BeforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.admin.Admin_01_SearchWithProductName@59496961]" started-at="2023-11-22T06:06:13Z" name="BeforeClass" finished-at="2023-11-22T06:06:24Z" duration-ms="11167" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://admin-demo.nopcommerce.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method signature="TC_01_SearchWithProductName()[pri:0, instance:com.nopcommerce.admin.Admin_01_SearchWithProductName@59496961]" started-at="2023-11-22T06:06:24Z" name="TC_01_SearchWithProductName" finished-at="2023-11-22T06:06:27Z" duration-ms="2486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_SearchWithProductName -->
+        <test-method signature="TC_02_SearchWithSubCategoryIsUnchecked()[pri:0, instance:com.nopcommerce.admin.Admin_01_SearchWithProductName@59496961]" started-at="2023-11-22T06:06:27Z" name="TC_02_SearchWithSubCategoryIsUnchecked" finished-at="2023-11-22T06:06:29Z" duration-ms="2540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_SearchWithSubCategoryIsUnchecked -->
+        <test-method signature="TC_03_SearchWithSubCategoryIsChecked()[pri:0, instance:com.nopcommerce.admin.Admin_01_SearchWithProductName@59496961]" started-at="2023-11-22T06:06:29Z" name="TC_03_SearchWithSubCategoryIsChecked" finished-at="2023-11-22T06:06:32Z" duration-ms="2780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_03_SearchWithSubCategoryIsChecked -->
+        <test-method is-config="true" signature="AfterClass()[pri:0, instance:com.nopcommerce.admin.Admin_01_SearchWithProductName@59496961]" started-at="2023-11-22T06:06:32Z" name="AfterClass" finished-at="2023-11-22T06:06:33Z" duration-ms="1183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterClass -->
+      </class> <!-- com.nopcommerce.admin.Admin_01_SearchWithProductName -->
+    </test> <!-- RUN ON FIREFOX - ADMIN -->
+  </suite> <!-- NopCommerce -->
+</testng-results>

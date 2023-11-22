@@ -1,0 +1,9 @@
+com\nopcommerce\admin\Admin_01_SearchWithProductName.class
+com\nopcommerce\user\User_02_LoginAccount.class
+com\nopcommerce\user\User_03_MyAccountInfo.class
+com\nopcommerce\user\User_01_RegisterNewAccount.class
+com\nopcommerce\common\Common_01_RegisterAccountAndGetCookie.class
+com\nopcommerce\user\User_05_SortAndPaging.class
+com\nopcommerce\user\User_06_WishlistAndCompare.class
+com\nopcommerce\user\User_07_Orders.class
+com\nopcommerce\user\User_04_Search.class

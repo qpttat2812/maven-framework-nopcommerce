@@ -1,0 +1,289 @@
+<html>
+<head>
+<title>TestNG:  RUN ON FIREFOX - USER</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>RUN ON FIREFOX - USER</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>42/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Nov 22 12:59:14 ICT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>419 seconds (419619 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nopcommerce.user.User_02_LoginAccount.Login_01_InputEmptyData()'><b>Login_01_InputEmptyData</b><br>Test class: com.nopcommerce.user.User_02_LoginAccount</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.user.User_02_LoginAccount@453d496b</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_02_LoginAccount.Login_02_InvalidEmail()'><b>Login_02_InvalidEmail</b><br>Test class: com.nopcommerce.user.User_02_LoginAccount</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.user.User_02_LoginAccount@453d496b</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_02_LoginAccount.Login_03_InputUnregisteredEmail()'><b>Login_03_InputUnregisteredEmail</b><br>Test class: com.nopcommerce.user.User_02_LoginAccount</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.user.User_02_LoginAccount@453d496b</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_02_LoginAccount.Login_04_InputRegisteredEmailAndNoPassword()'><b>Login_04_InputRegisteredEmailAndNoPassword</b><br>Test class: com.nopcommerce.user.User_02_LoginAccount</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.user.User_02_LoginAccount@453d496b</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_02_LoginAccount.Login_05_InputRegisteredEmailAndWrongPassword()'><b>Login_05_InputRegisteredEmailAndWrongPassword</b><br>Test class: com.nopcommerce.user.User_02_LoginAccount</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.user.User_02_LoginAccount@453d496b</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_02_LoginAccount.Login_06_InputRegisteredEmailAndPassword()'><b>Login_06_InputRegisteredEmailAndPassword</b><br>Test class: com.nopcommerce.user.User_02_LoginAccount</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.user.User_02_LoginAccount@453d496b</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_03_MyAccountInfo.MyAccount_01_UpdateCustomerInfo()'><b>MyAccount_01_UpdateCustomerInfo</b><br>Test class: com.nopcommerce.user.User_03_MyAccountInfo</td>
+<td></td>
+<td>3</td>
+<td>com.nopcommerce.user.User_03_MyAccountInfo@66bacdbc</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_03_MyAccountInfo.MyAccount_02_AddAddressInfo()'><b>MyAccount_02_AddAddressInfo</b><br>Test class: com.nopcommerce.user.User_03_MyAccountInfo</td>
+<td></td>
+<td>5</td>
+<td>com.nopcommerce.user.User_03_MyAccountInfo@66bacdbc</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_03_MyAccountInfo.MyAccount_03_ChangePassword()'><b>MyAccount_03_ChangePassword</b><br>Test class: com.nopcommerce.user.User_03_MyAccountInfo</td>
+<td></td>
+<td>4</td>
+<td>com.nopcommerce.user.User_03_MyAccountInfo@66bacdbc</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_03_MyAccountInfo.MyAccount_04_MyProductReview()'><b>MyAccount_04_MyProductReview</b><br>Test class: com.nopcommerce.user.User_03_MyAccountInfo</td>
+<td></td>
+<td>4</td>
+<td>com.nopcommerce.user.User_03_MyAccountInfo@66bacdbc</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_07_Orders.Orders_01_AddProductToCart()'><b>Orders_01_AddProductToCart</b><br>Test class: com.nopcommerce.user.User_07_Orders</td>
+<td></td>
+<td>2</td>
+<td>com.nopcommerce.user.User_07_Orders@7bb35cc6</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_07_Orders.Orders_02_EditProductInShoppingCart()'><b>Orders_02_EditProductInShoppingCart</b><br>Test class: com.nopcommerce.user.User_07_Orders</td>
+<td></td>
+<td>11</td>
+<td>com.nopcommerce.user.User_07_Orders@7bb35cc6</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_07_Orders.Orders_03_RemoveFromCart()'><b>Orders_03_RemoveFromCart</b><br>Test class: com.nopcommerce.user.User_07_Orders</td>
+<td></td>
+<td>10</td>
+<td>com.nopcommerce.user.User_07_Orders@7bb35cc6</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_07_Orders.Orders_04_UpdateShoppingCart()'><b>Orders_04_UpdateShoppingCart</b><br>Test class: com.nopcommerce.user.User_07_Orders</td>
+<td></td>
+<td>18</td>
+<td>com.nopcommerce.user.User_07_Orders@7bb35cc6</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_07_Orders.Orders_05_Checkout_QueuePaymentMethod()'><b>Orders_05_Checkout_QueuePaymentMethod</b><br>Test class: com.nopcommerce.user.User_07_Orders</td>
+<td></td>
+<td>25</td>
+<td>com.nopcommerce.user.User_07_Orders@7bb35cc6</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_07_Orders.Orders_06_Checkout_CardPaymentMethod()'><b>Orders_06_Checkout_CardPaymentMethod</b><br>Test class: com.nopcommerce.user.User_07_Orders</td>
+<td></td>
+<td>49</td>
+<td>com.nopcommerce.user.User_07_Orders@7bb35cc6</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_07_Orders.Orders_07_ReOrder()'><b>Orders_07_ReOrder</b><br>Test class: com.nopcommerce.user.User_07_Orders</td>
+<td></td>
+<td>57</td>
+<td>com.nopcommerce.user.User_07_Orders@7bb35cc6</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_01_RegisterNewAccount.Register_01_InputEmptyData()'><b>Register_01_InputEmptyData</b><br>Test class: com.nopcommerce.user.User_01_RegisterNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.user.User_01_RegisterNewAccount@77c7ed8e</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_01_RegisterNewAccount.Register_02_InputInvalidEmail()'><b>Register_02_InputInvalidEmail</b><br>Test class: com.nopcommerce.user.User_01_RegisterNewAccount</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.user.User_01_RegisterNewAccount@77c7ed8e</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_01_RegisterNewAccount.Register_03_InputExistedEmail()'><b>Register_03_InputExistedEmail</b><br>Test class: com.nopcommerce.user.User_01_RegisterNewAccount</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.user.User_01_RegisterNewAccount@77c7ed8e</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_01_RegisterNewAccount.Register_04_InputPasswordLessThanSixCharacters()'><b>Register_04_InputPasswordLessThanSixCharacters</b><br>Test class: com.nopcommerce.user.User_01_RegisterNewAccount</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.user.User_01_RegisterNewAccount@77c7ed8e</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_01_RegisterNewAccount.Register_05_InputConfirmPasswordNotMatchPassword()'><b>Register_05_InputConfirmPasswordNotMatchPassword</b><br>Test class: com.nopcommerce.user.User_01_RegisterNewAccount</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.user.User_01_RegisterNewAccount@77c7ed8e</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_04_Search.Search_01_InputEmptyData()'><b>Search_01_InputEmptyData</b><br>Test class: com.nopcommerce.user.User_04_Search</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.user.User_04_Search@2c6ee758</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_04_Search.Search_02_InputNotExistedData()'><b>Search_02_InputNotExistedData</b><br>Test class: com.nopcommerce.user.User_04_Search</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.user.User_04_Search@2c6ee758</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_04_Search.Search_03_InputRelativeKeyword()'><b>Search_03_InputRelativeKeyword</b><br>Test class: com.nopcommerce.user.User_04_Search</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.user.User_04_Search@2c6ee758</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_04_Search.Search_04_InputAbsoluteKeyword()'><b>Search_04_InputAbsoluteKeyword</b><br>Test class: com.nopcommerce.user.User_04_Search</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.user.User_04_Search@2c6ee758</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_04_Search.Search_05_AdvancedSearchWithParentCategories()'><b>Search_05_AdvancedSearchWithParentCategories</b><br>Test class: com.nopcommerce.user.User_04_Search</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.user.User_04_Search@2c6ee758</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_04_Search.Search_06_AdvancedSearchWithSubCategories()'><b>Search_06_AdvancedSearchWithSubCategories</b><br>Test class: com.nopcommerce.user.User_04_Search</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.user.User_04_Search@2c6ee758</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_04_Search.Search_07_AdvancedSearchWithIncorrectManufacturer()'><b>Search_07_AdvancedSearchWithIncorrectManufacturer</b><br>Test class: com.nopcommerce.user.User_04_Search</td>
+<td></td>
+<td>2</td>
+<td>com.nopcommerce.user.User_04_Search@2c6ee758</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_04_Search.Search_08_AdvancedSearchWithCorrectManufacturer()'><b>Search_08_AdvancedSearchWithCorrectManufacturer</b><br>Test class: com.nopcommerce.user.User_04_Search</td>
+<td></td>
+<td>2</td>
+<td>com.nopcommerce.user.User_04_Search@2c6ee758</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_05_SortAndPaging.SortAndPaging_01_SortWithNameAscending()'><b>SortAndPaging_01_SortWithNameAscending</b><br>Test class: com.nopcommerce.user.User_05_SortAndPaging</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.user.User_05_SortAndPaging@640dc4c6</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_05_SortAndPaging.SortAndPaging_02_SortWithNameDescending()'><b>SortAndPaging_02_SortWithNameDescending</b><br>Test class: com.nopcommerce.user.User_05_SortAndPaging</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.user.User_05_SortAndPaging@640dc4c6</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_05_SortAndPaging.SortAndPaging_03_SortWithPriceAscending()'><b>SortAndPaging_03_SortWithPriceAscending</b><br>Test class: com.nopcommerce.user.User_05_SortAndPaging</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.user.User_05_SortAndPaging@640dc4c6</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_05_SortAndPaging.SortAndPaging_04_SortWithPriceDescending()'><b>SortAndPaging_04_SortWithPriceDescending</b><br>Test class: com.nopcommerce.user.User_05_SortAndPaging</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.user.User_05_SortAndPaging@640dc4c6</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_05_SortAndPaging.SortAndPaging_05_DisplayThreeProductsInPage()'><b>SortAndPaging_05_DisplayThreeProductsInPage</b><br>Test class: com.nopcommerce.user.User_05_SortAndPaging</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.user.User_05_SortAndPaging@640dc4c6</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_05_SortAndPaging.SortAndPaging_06_DisplaySixProductsInPage()'><b>SortAndPaging_06_DisplaySixProductsInPage</b><br>Test class: com.nopcommerce.user.User_05_SortAndPaging</td>
+<td></td>
+<td>20</td>
+<td>com.nopcommerce.user.User_05_SortAndPaging@640dc4c6</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_05_SortAndPaging.SortAndPaging_07_DisplayNineProductsInPage()'><b>SortAndPaging_07_DisplayNineProductsInPage</b><br>Test class: com.nopcommerce.user.User_05_SortAndPaging</td>
+<td></td>
+<td>20</td>
+<td>com.nopcommerce.user.User_05_SortAndPaging@640dc4c6</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_06_WishlistAndCompare.WishlistAndCompare_01_AddToWishlist()'><b>WishlistAndCompare_01_AddToWishlist</b><br>Test class: com.nopcommerce.user.User_06_WishlistAndCompare</td>
+<td></td>
+<td>5</td>
+<td>com.nopcommerce.user.User_06_WishlistAndCompare@4b54af3d</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_06_WishlistAndCompare.WishlistAndCompare_02_AddProductToCartFromWishlist()'><b>WishlistAndCompare_02_AddProductToCartFromWishlist</b><br>Test class: com.nopcommerce.user.User_06_WishlistAndCompare</td>
+<td></td>
+<td>16</td>
+<td>com.nopcommerce.user.User_06_WishlistAndCompare@4b54af3d</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_06_WishlistAndCompare.WishlistAndCompare_03_RemoveProductFromWishlist()'><b>WishlistAndCompare_03_RemoveProductFromWishlist</b><br>Test class: com.nopcommerce.user.User_06_WishlistAndCompare</td>
+<td></td>
+<td>4</td>
+<td>com.nopcommerce.user.User_06_WishlistAndCompare@4b54af3d</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_06_WishlistAndCompare.WishlistAndCompare_04_AddProductToCompare()'><b>WishlistAndCompare_04_AddProductToCompare</b><br>Test class: com.nopcommerce.user.User_06_WishlistAndCompare</td>
+<td></td>
+<td>21</td>
+<td>com.nopcommerce.user.User_06_WishlistAndCompare@4b54af3d</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_06_WishlistAndCompare.WishlistAndCompare_05_RecentlyViewedProduct()'><b>WishlistAndCompare_05_RecentlyViewedProduct</b><br>Test class: com.nopcommerce.user.User_06_WishlistAndCompare</td>
+<td></td>
+<td>6</td>
+<td>com.nopcommerce.user.User_06_WishlistAndCompare@4b54af3d</td></tr>
+</table><p>
+</body>
+</html>
